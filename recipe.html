@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<title> CookingPro </title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="recipestyles.css"> <!-- css -->
+    <link rel="stylesheet" href="normalize.css"> <!-- margins -->
+    <script type="text/javascript" src=alphascript.js></script> <!-- javascript -->
+</head>
+<?php  include 'htdocs/db.php';?>
+
+    <body>
+        <!-- sticky header with the text "CookingPro" -->
+        <header>
+            <h1> CookingPro </h1>
+                <!-- navigation -->
+                    <ul class="navigation">
+                        <li>
+                            <a href="alpha.php">HOME</a>
+                        </li>
+                        <li>
+                            <a href="menu.php">MENU</a>
+                        </li>
+                        <li>
+                            <a href="help.html">HELP</a>
+                        </li>
+                    </ul>
+                <!-- search bar -->
+                <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Search</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <input type="text" placeholder="Search Recipes.." id="myInput" onkeyup="filterFunction()">
+                          <a href="#">Carb Conscious</a>
+                          <a href="#">Diabetes Friendly</a>
+                          <a href="#">Mediterranean</a>
+                          <a href="#">Vegetarian</a>
+                        </div>
+                </div>
+                </header> <!-- closing tag for sticky header -->
+            <!-- yellow background -->
+            <div class="recipesection">
+                        <div class="recipe">
+                            <div class="centercontent">
+                                    <!-- food image -->
+                                    <div class="recipeimg">
+                                        <img src="images/example1.jpg">
+                                    </div>
+                                    <!-- recipe name -->
+                                    <div class="recipetxt">
+                                        <h2>Creamy Prosciutto & Tomato Pasta with Brown Butter Breadcrumbs</h2>
+                                        <p class="paragraph">To create an elevated garnish, we’re toasting crisp breadcrumbs in brown butter—simply butter that has been heated to a deep golden brown, developing a deliciously toasty, nutty flavor. For added richness, bites of delightfully salty prosciutto top the warm pasta just before serving.</p>
+                                        <p class="ingredients">Ingredients:</p>
+                                    </div>
+                                    <!-- time it takes to cook food -->
+                                    <div class="time">
+                                        <img src="images/clockicon.jpg" width="40px" height="40px">
+                                        <h3>25 min</h3>
+                                    </div>
+                                    <!-- amount of calories -->
+                                    <div class="calories">
+                                        <img src="images/caloriesicon.jpg" width="40px" height="40px">
+                                        <h3> Est. 790 Cals/serving</h3>
+                                    </div>
+                            </div> <!-- closing tag for "centercontent"-->
+                        </div> <!-- closing tag for "recipe" -->
+
+            </div>
+    </body>
+</head>
+</html>
