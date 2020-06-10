@@ -1,0 +1,445 @@
+html {
+    background-color: rgb(240, 231, 161);
+  }
+
+  body {
+    font-family: 'tommy-soft', sans-serif;
+  }
+  
+  /* sticky header */
+  header {
+    background: #52A378;
+    box-shadow: 0px 0px 20px 0px #000000; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  /* media quiery for the sticky header */
+  @media only screen and (min-width: 320px) {
+    header {
+      height: 12rem;
+      flex-direction: column; 
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    header {
+      height: 12rem;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    header {
+      height: 10rem;
+      flex-direction: row;
+    }
+  }
+  
+  /* navigation list items - removes bullet points */
+  .navigation li {
+    display: inline;
+    list-style-type: none;
+  }
+  
+  /* links inside navigation */
+  li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  /* link on hover */
+  li a:hover {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  li a:active {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* search box */
+  .dropbtn {
+    background-color:  rgb(68, 134, 99);
+    color: white;
+    padding: 16px 105.5px 16px 105.5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(46, 90, 66);
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 60px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  /* "CookingPro" */
+  h1 {
+      color: #f0f0f0;
+      font-family: 'poetsenone' ;
+  }
+  /* media quiery for title "CookingPro" */
+  @media only screen and (min-width: 320px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  
+  /* h2 elements - recipe headings and ad headings */
+  h2 {
+    font-size: 30px;
+    font-family: 'codecpro';
+    text-decoration: underline;
+    margin-bottom: 30px;
+  }
+  
+  /* h3 elements */
+  h3 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+  
+  /* yellow background */
+  .recipesection {
+    background-color: #EFE075, 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: auto;
+  }
+  
+  /* center recipes */
+  .centercontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  /* recipe description */
+  .paragraph {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 18px;
+  }
+  
+  /* ingredients */
+  .ingredients {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      font-family: 'codecpro';
+      text-decoration: underline;
+  }
+  /* media quiery to size down font for title of recipe */
+  @media only screen and (min-width: 320px) {
+    .ingredients {
+        font-size: 20px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .ingredients {
+        font-size: 20px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    .ingredients {
+        font-size: 25px;
+    }
+  }
+
+  /* time */
+  .time {
+      padding-bottom: 20px;
+  }
+
+  /*proteine */
+  .proteine {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /*serving */
+  .servings {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .extradetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Frequently Asked Questions - help page */
+  .askedq {
+    font-family: 'codecpro';
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  /* media quiery to fix top margin for "Frequently Asked Questions */
+  @media only screen and (min-width: 320px) {
+    .askedq {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .askedq {
+      padding-top: 50px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    .askedq {
+      padding-top: 100px;
+    }
+  }
+  
+  /* media quiery for helpsection, center text on on tablet + mobile 
+  and size down image */
+  @media only screen and (min-width: 320px) {
+    .helpsection {
+      margin: 0;
+    }
+    .smiley {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .helpsection {
+      margin: 0;
+    }
+    .smiley {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  /* left aligned */
+  @media only screen and (min-width : 1024px) {
+    .helpsection {
+      margin-right: 600px;
+    }
+    .smiley {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  /* "Need Help?" */
+  .needhelp {
+    font-size: 30px;
+    font-family: 'codecpro';
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 30px;
+  }
+  
+  /* recipe names */
+  .recipetxt h2 {
+    background-color: #AACC97;
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* media quiery to size down font for title + subtitle of recipe */
+  @media only screen and (min-width: 320px) {
+    .recipetxt h2 {
+        font-size: 25px;
+    }
+    .recipetxt .subtitle {
+        font-size: 20px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .recipetxt h2 {
+        font-size: 25px;
+    }
+    .recipetxt .subtitle {
+        font-size: 20px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    .recipetxt h2 {
+        font-size: 30px;
+    }
+    .recipetxt .subtitle {
+        font-size: 25px;
+    }
+  }
+  
+  /* media quiery for recipe images to size down for mobile */
+  @media only screen and (min-width: 320px) {
+    .ingredimg img {
+      width: 250px;
+      height: 200px;
+      display: block;
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .ingredimg img {
+      width: 600px;
+      height: 450px;
+      display: block;
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    .ingredimg img {
+      width: 600px;
+      height: 450px;
+      display: block;
+      margin: 0;
+      padding: 20px;
+    }
+}
+
+  /* recipe */
+  .recipe {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    background: #ffffff;
+    box-shadow: -10px 10px 0 0 rgb(102, 184, 146);
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* media quiery for recipes to size down for mobile */
+  @media only screen and (min-width: 320px) {
+    .recipe {
+      width: 320%;
+      max-width: 320px;
+      margin-top: 3050px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .recipe {
+      width: 700%;
+      max-width: 700px;
+      margin-top: 2200px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    .recipe {
+      width: 700%;
+      max-width: 700px;
+      margin-top: 2200px;
+    }
+  }
+
+  /* media quiery for recipe images to size down for mobile */
+  @media only screen and (min-width: 320px) {
+    .recipeimg img {
+      width: 250px;
+      height: 250px;
+      display: block;
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  @media only screen and (min-width : 768px) {
+    .recipeimg img {
+      width: 300px;
+      height: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
+  }
+  @media only screen and (min-width : 1024px) {
+    .recipeimg img {
+      width: 350px;
+      height: 350px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
+}
+
+  
+  /* font */
+  @font-face {
+    font-family: 'poetsenone';
+    src: url('fonts/poetsenone-regular-webfont.woff2') format('woff2'),
+         url('fonts/poetsenone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'codecpro';
+    src: url('fonts/codec-pro.regular-webfont.woff2') format('woff2'),
+         url('fonts/codec-pro.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
