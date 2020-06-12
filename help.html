@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<title> CookingPro </title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="alphastyles.css"> <!-- css -->
+    <link rel="stylesheet" href="normalize.css"> <!-- margins -->
+    <script type="text/javascript" src=alphascript.js></script> <!-- javascript -->
+</head>
+    <body>
+        <!-- sticky header with the text "CookingPro" -->
+        <header>
+            <h1> CookingPro </h1>
+                <!-- navigation -->
+                    <ul class="navigation">
+                        <li>
+                            <a href="alpha.php">HOME</a>
+                        </li>
+                        <li>
+                            <a href="menu.php">MENU</a>
+                        </li>
+                        <li>
+                            <a href="help.html">HELP</a>
+                        </li>
+                    </ul>
+                <!-- search bar -->
+                <form class="formsearch" action="menu.php" method="POST">
+                    <input type="text" placeholder="Search..." name="search" class="inputsearch">
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+                </header> <!-- closing tag for sticky header -->
+            <!-- yellow background -->
+            <div class="recipesection">
+                <!-- white background -->
+                    <div class="whitebg">
+                            <div class="centercontent">
+                                <img src="Images/smiley.jpg" class="smiley">
+                                <p class="needhelp"> Need Help?</h2>
+                                <div class="helpsection">
+                                <p class="askedq">Frequently Asked Questions:</p>
+                                <p>What is CookingPro?</p>
+                                <p>Account Info</p>
+                                <p>Billing</p>
+                                <p>Market</p>
+                                <p>Recipe Selection</p>
+                                <p>Ingredient Standards</p>
+                                <p>Meal Deliveries</p>
+                                <p>Wine Program</p>
+                                <p>Updates</p>
+                            </div> <!-- closing tag for "helpsection"-->
+                        </div> <!-- closing tag for "centercontent"-->
+                    </div><!-- closing tag for "whitebg" -->
+
+            </div>
+    </body>
+</head>
+</html>
